@@ -1,0 +1,15 @@
+type_command = "Type a command: "
+exit = "Exiting..."
+help = (
+    "Help on commands:\n"
+    " - add 'habit' <time> <regularity> - adds a new habit.\n"
+    " - delete <habit number> - deletes a habit.\n"
+    " - list - displays a list of habits.\n"
+    " - import - allows to import new habits from a file (supports only .csv).\n"
+    " - export <format> - allows to export habits into a file (supported formats .csv and .html).\n"
+    " - mark <habit number> - marks complete/uncomplete habits.\n"
+    " - help - shows allowed commands.\n"
+    " - exit - exits the program (also can be used -1)."
+)
+unknown = "Unknown command, please try again or use help."
+incorrect_usage = "Incorrect usage of the command, try again or use help."
