@@ -15,8 +15,8 @@ while command != "-1" and command != "exit":
         if len(parsed_command) != 4:
             print(messages.incorrect_usage)
         else:
-            print(parsed_command)
-
+            pass
+            db.add_habit(parsed_command[1], parsed_command[2], parsed_command[3])
     elif parsed_command[0] == "help":
         print(messages.help)
     else:

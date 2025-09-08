@@ -1,5 +1,5 @@
 def parse(command: str):
-    if command.count("'") != 2 and command.count('"') != 2: # If command (specifically argument 1) doesn't have two speech marks, return an error
+    if command.split()[0] == "add" and command.count("'") != 2 and command.count('"') != 2: # If command (specifically argument 1) doesn't have two speech marks, return an error
         return ["add", "error"]
     
     # This loop separates strings by space, 
